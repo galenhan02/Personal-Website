@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> Galen's Personal Website</title>
+    <link rel="icon" href="Assets/webcat.jpg.webp">
+    <!--Note: favicon does not show up on Safari, please try chrome -->
+</head>
+<body>
+    <h1 id="Title"> Galen's Personal Website!</h1>
+    <header>
+        <nav>
+            <a href="#AboutMe">About Me</a>
+            <a href="#Experience">Experience</a>
+            <a href="#Projects">Projects</a>
+            <a href="#Personal">Personal</a>
+        </nav>
+    </header>
+        
+        <img src="Assets/GalenHan.jpg" alt="Picture of me" width="200"> <br>
+        
+        <div>
+        <a href="https://www.linkedin.com/in/galenhan02/">LinkedIn</a>
+        <a href="https://github.com/galenhan02">GitHub</a>
+        <a href="mailto:galen.han02@gmail.com">Email</a>
+        </div>
+
+        <aside>
+        <h2 id="Awards">Awards</h2>
+            <ul>
+                <li>Regents Scholar</li>
+            </ul>
+        </aside>
+
+        <hr>
+    <main>
+        <section>
+        <h2 id="AboutMe" style="background-color:aqua"> About Me</h2>
+            <p> 
+            <code>Hello World!</code> My name is <b>Galen Han</b> and I am 20 years old. I am a <em>rising</em> third year 
+            <span> Computer Science </span>major at UC San Diego. Although <i>slightly</i> introverted, I <strong>love</strong> meeting
+            new people! I like playing instruments (ukulele + piano), enjoying nature (biking + hiking), and
+            chess (a little rusty). 
+            <svg width="'10" height ="10">
+                <rect width="10" height="10"></rect>
+            </svg> 
+            <!--(To be converted to something other than a square later) -->
+            </p>
+        </section>
+        <hr>
+        
+        <section>
+        <h2 id="Experience">Experience</h2>
+            <h3 id="Coursework"> Relevant Coursework</h3>
+                <ol>
+                    <li>CSE 100</li>
+                    <li>CSE 101</li>
+                    <li>CSE 105</li>
+                </ol>
+            <h3 id="PastJobs">Past Jobs</h3>
+                <ul>
+                    <li> Tutoring</li>
+                    <li> Stepik</li>
+                </ul>
+            <h3 id="TechnicalSkills">Technical Skills</h3>
+                <table>
+                    <caption>Items I have proficiency over</caption>
+                    <colgroup>
+                        <col span="1">
+                        <col span="1">
+                    </colgroup>
+                    <tr>
+                        <th>Languages</th>
+                        <th> Code Editors </th>
+                    </tr>
+                    <tr>
+                        <td>
+                            Java
+                        </td>
+                        <td>
+                            IntelliJ
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Python
+                        </td>
+                        <td>
+                            VSCode
+                        </td>
+                    </tr>
+                </table>
+        </section>
+
+        <hr>
+        <section>
+        <h2 id="Projects">Projects</h2>
+            <h3 id="ZooSeeker">ZooSeekerApp</h3>
+                <p>This is a project that I worked on. This serves as a placeholder for when I actually talk about this project.</p>
+            <h3 id="iOS">Insert iOS App</h3>
+            <figure>
+            <pre>
+/                 `   \
+|  .-----------.  |   |-----.
+|  |           |  |   |-=---|
+|  | Apple //c |  |   |-----|
+|  |           |  |   |-----|
+|  |           |  |   |-----|
+|  `-----------'  |   |-----'/\
+\________________/___'     /  \
+    /                      / / /
+    / //               //  / / /
+    /                      / / /
+  / _/_/_/_/_/_/_/_/_/_/ /   /
+/ _/_/_/_/_/_/_/_/_/_/ /   /
+/ _/_/_/_______/_/_/_/ / __/
+/______________________/ /    
+\______________________\/
+            </pre>
+            <figcaption> ASCII Art I found on the web as a placeholder!</figcaption>
+            </figure>
+        </section>
+        <hr>
+        <section>
+        <h2 id="Personal">Personal</h2>
+            <p>Ukulele! (Check out some ukulele related items below!) </p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/M1duJPDNt3E" title="YouTube video player" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen>
+            </iframe>
+                <video width="560" height="315" controls>
+                    <source src="Assets/Ukulele.mp4" type="video/mp4">
+                    Browser does not support .mov
+                </video>
+                <audio controls>
+                    <source src="Assets/RealPeople.MOV">
+                </audio>
+                <form id="form" action="httpbin.org/get" method="get">
+                    <fieldset>
+                        <legend>Ratings</legend>
+                        <label for="opinion"> Do you like the ukulele?</label>
+                        <textarea id="opinion" name="opinion" rows="5" cols="33"> </textarea> <br>
+                        <label for="rating"> Rate it out of 5!</label>
+                        <input list="ratings" id="rating" name="rating">
+                        <datalist id="ratings">
+                            <option value="1"></option>
+                            <option value="2"></option>
+                            <option value="3"></option>
+                            <option value="4"></option>
+                            <option value="5"></option>
+                        </datalist> <br>
+                        <label for="media-select">Choose a song I should cover!</label>
+                        <select id="media-select">
+                            <optgroup label="Pop Songs">
+                                <option> Shake it off</option>
+                                <option> Something just like this</option>
+                            </optgroup> 
+                            
+                        </select> 
+                        <button type="button" form="form"> Submit</button>
+                    </fieldset>
+                    
+                </form>
+        </section>
+    </main>
+
+
+<footer>
+    <p>Thanks for scrolling all the way down! Here is a picture of a cat :)</p>
+    <picture>
+        <source srcset="Assets/webcat.jpg.webp" type="image/webp"/>
+        <img src="Assets/notwebcat.jpg" width="200" alt="Cat">
+    </picture>
+    <details>
+        <summary> Click me!</summary>
+        Thanks for clicking this as well :)
+    </details>
+    <template id="template">
+        hey! you are not supposed to see this!
+    </template>
+    <canvas id="canvas">
+        Canvas tag not supported
+    </canvas>
+
+    
+    <script> 
+    var canvas = document.getElementById("canvas");
+    var ctx = canvas.getContext("2d");
+    ctx.moveTo(0,0);
+    ctx.lineTo(100,100);
+    ctx.stroke();
+    </script>
+</footer>
+</body>
+</html>
