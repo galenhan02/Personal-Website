@@ -2,69 +2,72 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title> Galen's Personal Website</title>
-    <link rel="icon" href="Assets/webcat.jpg.webp">
+    <title id="Title"> Galen's Personal Website</title>
+    <link rel="icon" href="Assets/JPG/GalenHan.jpg">
     <!--Note: favicon does not show up on Safari, please try chrome -->
+    <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body>
+    <main class="idea1">
+    <div class="Top">
     <h1 id="Title"> Galen's Personal Website!</h1>
-    <header>
         <nav>
             <a href="#AboutMe">About Me</a>
             <a href="#Experience">Experience</a>
             <a href="#Projects">Projects</a>
             <a href="#Personal">Personal</a>
         </nav>
-    </header>
+    </div>
+        <!--Change to PNG for higher res?-->
+    <div class="Links">
+        <picture>
+            <source srcset="Assets/PNG/GalenHan.png" media="(min-wdith: 451px)">
+            <img src="Assets/JPG/GalenHan.jpg" alt="Picture of me" width="200"> <br>
+        </picture>
         
-        <img src="Assets/GalenHan.jpg" alt="Picture of me" width="200"> <br>
         
-        <div>
-        <a href="https://www.linkedin.com/in/galenhan02/">LinkedIn</a>
-        <a href="https://github.com/galenhan02">GitHub</a>
-        <a href="mailto:galen.han02@gmail.com">Email</a>
+        <a id="LinkedIn" href="https://www.linkedin.com/in/galenhan02/">LinkedIn</a>
+        <a id="GitHub" href="https://github.com/galenhan02">GitHub</a>
+        <a id="Email" href="mailto:galen.han02@gmail.com">Email</a>
+
+    </div>
+        
+
+        <div class="Awards">
+        <h2>Awards and Distinctions</h2>
+            <ul>
+                <li>Regents Scholar: The Regents Scholarship, based on academic excellence, is a prestigious scholarship awarded to UC undergraduate students.</li> <br> 
+                <li>XYZ Award: This award is given to individuals who have achieved XYZ</li> <br>
+                <li>XYZ Award: This award is given to individuals who have achieved XYZ</li> <br>
+                <li>XYZ Award: This award is given to individuals who have achieved XYZ</li>
+            </ul>
         </div>
 
-        <aside>
-        <h2 id="Awards">Awards</h2>
-            <ul>
-                <li>Regents Scholar</li>
-            </ul>
-        </aside>
-
-        <hr>
-    <main>
-        <section>
-        <h2 id="AboutMe" style="background-color:aqua"> About Me</h2>
+        <div class="AboutMe">
+        <h2 id="AboutMe">About Me </h2>
             <p> 
             <code>Hello World!</code> My name is <b>Galen Han</b> and I am 20 years old. I am a <em>rising</em> third year 
             <span> Computer Science </span>major at UC San Diego. Although <i>slightly</i> introverted, I <strong>love</strong> meeting
             new people! I like playing instruments (ukulele + piano), enjoying nature (biking + hiking), and
             chess (a little rusty). 
-            <svg width="'10" height ="10">
-                <rect width="10" height="10"></rect>
-            </svg> 
-            <!--(To be converted to something other than a square later) -->
             </p>
-        </section>
-        <hr>
+        </div>
         
-        <section>
+        <div class="Experience">
         <h2 id="Experience">Experience</h2>
             <h3 id="Coursework"> Relevant Coursework</h3>
-                <ol>
-                    <li>CSE 100</li>
-                    <li>CSE 101</li>
-                    <li>CSE 105</li>
-                </ol>
+                <ul>
+                    <li>CSE 100: High-performance data structures and supporting algorithms. Use and implementation of data structures like (un)balanced trees, graphs, priority queues, and hash tables. Also, memory management, pointers, recursion.</li> <br>
+                    <li>CSE 101: Design and analysis of efficient algorithms with emphasis of nonnumerical algorithms such as sorting, searching, pattern matching, and graph and network algorithms. Measuring complexity of algorithms, time and storage. NP-complete problems.</li> <br>
+                    <li>CSE 105: An introduction to the mathematical theory of computability. Formal languages. Finite automata and regular expressions. Push-down automata and context-free languages. Computable or recursive functions: Turing machines, the halting problem. Undecidability.</li>
+                </ul>
             <h3 id="PastJobs">Past Jobs</h3>
                 <ul>
-                    <li> Tutoring</li>
-                    <li> Stepik</li>
+                    <li> Tutoring: Facilitate conceptual understanding of course material, provide assistance in programming assignments assigned to assess knowledge of course content, grade assignments/exams</li> <br>
+                    <li> Stepik: Authoring/editing a textbook for university course (CSE 12: Basic Data Structures and OO Design) </li>
                 </ul>
             <h3 id="TechnicalSkills">Technical Skills</h3>
                 <table>
-                    <caption>Items I have proficiency over</caption>
                     <colgroup>
                         <col span="1">
                         <col span="1">
@@ -89,107 +92,47 @@
                             VSCode
                         </td>
                     </tr>
+                    <tr>
+                        <td>
+                            C/C++
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            HTML/CSS/JS
+                        </td>
+                    </tr>
                 </table>
-        </section>
+            </div>
 
-        <hr>
-        <section>
+        <div class="Projects">
         <h2 id="Projects">Projects</h2>
             <h3 id="ZooSeeker">ZooSeekerApp</h3>
                 <p>This is a project that I worked on. This serves as a placeholder for when I actually talk about this project.</p>
             <h3 id="iOS">Insert iOS App</h3>
-            <figure>
-            <pre>
-/                 `   \
-|  .-----------.  |   |-----.
-|  |           |  |   |-=---|
-|  | Apple //c |  |   |-----|
-|  |           |  |   |-----|
-|  |           |  |   |-----|
-|  `-----------'  |   |-----'/\
-\________________/___'     /  \
-    /                      / / /
-    / //               //  / / /
-    /                      / / /
-  / _/_/_/_/_/_/_/_/_/_/ /   /
-/ _/_/_/_/_/_/_/_/_/_/ /   /
-/ _/_/_/_______/_/_/_/ / __/
-/______________________/ /    
-\______________________\/
-            </pre>
-            <figcaption> ASCII Art I found on the web as a placeholder!</figcaption>
-            </figure>
-        </section>
-        <hr>
-        <section>
+                <p>This is a project that I plan to work on. This serves as a placeholder for when I actaully talk about this project.</p>
+        </div>
+
+        <div class="Personal">
         <h2 id="Personal">Personal</h2>
-            <p>Ukulele! (Check out some ukulele related items below!) </p>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/M1duJPDNt3E" title="YouTube video player" 
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-            allowfullscreen>
-            </iframe>
-                <video width="560" height="315" controls>
-                    <source src="Assets/Ukulele.mp4" type="video/mp4">
-                    Browser does not support .mov
-                </video>
-                <audio controls>
-                    <source src="Assets/RealPeople.MOV">
-                </audio>
-                <form id="form" action="httpbin.org/get" method="get">
-                    <fieldset>
-                        <legend>Ratings</legend>
-                        <label for="opinion"> Do you like the ukulele?</label>
-                        <textarea id="opinion" name="opinion" rows="5" cols="33"> </textarea> <br>
-                        <label for="rating"> Rate it out of 5!</label>
-                        <input list="ratings" id="rating" name="rating">
-                        <datalist id="ratings">
-                            <option value="1"></option>
-                            <option value="2"></option>
-                            <option value="3"></option>
-                            <option value="4"></option>
-                            <option value="5"></option>
-                        </datalist> <br>
-                        <label for="media-select">Choose a song I should cover!</label>
-                        <select id="media-select">
-                            <optgroup label="Pop Songs">
-                                <option> Shake it off</option>
-                                <option> Something just like this</option>
-                            </optgroup> 
-                            
-                        </select> 
-                        <button type="button" form="form"> Submit</button>
-                    </fieldset>
-                    
-                </form>
-        </section>
+            Here are some recent images of my life! <br>
+            <picture>
+                <source srcset="Assets/PNG/food.png" media="(min-width:451px)">
+                <img src="Assets/JPG/food.jpg" alt="Picture of food" width="200"> 
+            </picture>
+            <picture>
+                <source srcset="Assets/PNG/bunny.png" media="(min-width:451px)">
+                <img src="Assets/JPG/bunny.jpg" alt="Picture of bunny" width="200"> 
+            </picture>
+            <picture>
+                <source srcset="Assets/PNG/musical.png" media="(min-width:451px)">
+                <img src="Assets/JPG/musical.jpg" alt="Picture of musical" width="200"> 
+            </picture>
+            <picture>
+                <source srcset="Assets/PNG/bread.png" media="(min-width:451px)">
+                <img src="Assets/JPG/bread.jpg" alt="Picture of bread" width="200" height="150"> 
+            </picture>
+        </div>
     </main>
-
-
-<footer>
-    <p>Thanks for scrolling all the way down! Here is a picture of a cat :)</p>
-    <picture>
-        <source srcset="Assets/webcat.jpg.webp" type="image/webp"/>
-        <img src="Assets/notwebcat.jpg" width="200" alt="Cat">
-    </picture>
-    <details>
-        <summary> Click me!</summary>
-        Thanks for clicking this as well :)
-    </details>
-    <template id="template">
-        hey! you are not supposed to see this!
-    </template>
-    <canvas id="canvas">
-        Canvas tag not supported
-    </canvas>
-
-    
-    <script> 
-    var canvas = document.getElementById("canvas");
-    var ctx = canvas.getContext("2d");
-    ctx.moveTo(0,0);
-    ctx.lineTo(100,100);
-    ctx.stroke();
-    </script>
-</footer>
 </body>
 </html>
