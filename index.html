@@ -3,6 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <title id="Title"> Galen's Personal Website</title>
+    <script type="module">
+        import * as FunFact from './FunFact.js';
+
+        document.addEventListener("DOMContentLoaded", FunFact.init());
+    </script>
     <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body>
@@ -52,6 +57,8 @@
             new people! I like playing instruments, enjoying nature, and
             chess! Check out some of my recent happening in my life under "Personal"! 
             </p>
+            <button id="funfact">Fun Fact!</button> <br>
+            <p id="Fun Fact"></p>
         </div>
         
         <div class="Experience">
