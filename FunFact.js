@@ -10,6 +10,6 @@ function getFacts() {
     const Fact = document.getElementById("Fun Fact");
     FFButton.addEventListener("click", ()=> {
         Fact.innerText = facts[factIndex % facts.length];
-        index++;
+        factIndex++;
     })
 }
