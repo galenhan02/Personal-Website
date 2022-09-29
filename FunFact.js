@@ -8,8 +8,8 @@ function getFacts() {
     const FFButton = document.getElementById("funfact");
     const Fact = document.getElementById("Fun Fact");
     FFButton.addEventListener("click", ()=> {
-        let index = 0;
-        Fact.innerText = facts[index % facts.length];
+        var factIndex = 0;
+        Fact.innerText = facts[factIndex % facts.length];
         index++;
     })
 }
