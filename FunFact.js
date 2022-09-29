@@ -8,8 +8,8 @@ function getFacts() {
     const FFButton = document.getElementById("funfact");
     const Fact = document.getElementById("Fun Fact");
     FFButton.addEventListener("click", ()=> {
-        const randNum = Math.floor(Math.random() * facts.length);
-        console.log(randNum);
-        Fact.innerText = facts[randNum];
+        const index = 0;
+        Fact.innerText = facts[index % facts.length];
+        index++;
     })
 }
