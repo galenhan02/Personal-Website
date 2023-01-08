@@ -1,2 +1,3 @@
-# Personal-Website-CSS
-CSS version
+# Personal-Website
+
+A beginner's dabble into making a website!
